@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <div class="button-list">
+        <button class="genbutton", id="dprint", onclick="showDiv('digitalprint')">Цифровая печать</button>
+        <button class="genbutton", id="pprint", onclick="showDiv('photoprint')">Фото печать</button>
+        <button class="genbutton", id="wprint", onclick="showDiv('wideprint')">Широкоформатная печать</button>
+        <button class="genbutton", id="vprint", onclick="showDiv('viscardprint')">Визикти</button>
+        <button class="genbutton", id="bprint", onclick="showDiv('bookprint')">Печать Книг</button>
+        <button class="genbutton", id="fbprint", onclick="showDiv('photobookprint')">Печать Фотобуков</button>
+    </div>
+    
+    <div id="digitalprint" class="content-div"> 
+        <form name="density">
+            <label for="density">Выберите толщину бумаги</label>
+            <select  id="densityid">
+              <option value="">-- Выберите толщину бумаги --</option>
+              <option value="80">80 гр/м2 (обычная)</option>
+              <option value="130">130 гр/м2</option>
+              <option value="raflatak">Самоклейка</option>
+              <option value="150">150 гр/м2</option>
+              <option value="170">170 гр/м2</option>
+              <option value="200">200 гр/м2</option>
+              <option value="250">250 гр/м2</option>
+              <option value="300">300 гр/м2</option>
+              <option value="350">350 гр/м2</option>
+            </select>
+        </form>
+        <form name="size">
+            <label for="size">Выберите размер бумаги</label>
+            <select  id="sizeid">
+              <option value="">-- Выберите размер бумаги --</option>
+              <option value="a6">A6 (105 x 148 мм)</option>
+              <option value="a5">A5 (210 x 148 мм)</option>
+              <option value="a4">A4 (210 x 297 мм)</option>
+              <option value="a5">A3 (420 x 297 мм)</option>
+            </select>
+        </form>
+           <p>Выберите вид: одно- или двухсторонее</p>
+        <div class="buttons">
+             <button class="sideb" id="4+0">Одностороняя</button>
+             <button class="sideb" id="4+4">Двухстороняя</button>
+        </div>
+        <div class="lam">
+            <p>Выберите тип ламинации / фольгирования</p>
+        <div class="buttons"> 
+             <button class="lamb1" id="boxlam">Пакетная</button>
+             <button class="lamb1" id="pripress">Припресс</button>
+             <button class="lamb1" id="foil">Фольгирование</button>
+             <button class="lamb1" id="nonelam">Отстутсвует</button>
+        </div>
+        <div class="buttons"> 
+              <button class="lamb" id="matelam">Матовая</button>
+              <button class="lamb" id="glosslam">Глянцевая</button>
+        </div>
+        </div>
+    </div>
+    <div id="photoprint" class="content-div">
+        <p>Выберите тип бумаги</p>
+        <div class="buttons">
+          <button class="bum" id="mate">Матовая</button>
+          <button class="bum" id="gloss">Глянцевая</button>
+          <button class="bum" id="design">Дизайнерская</button>
+        </div>
+        <form name="size">
+            <label for="size">Выберите размер бумаги</label>
+            <select  id="sizeidp">
+              <option value="">-- Выберите размер бумаги --</option>
+              <option value="a6">A6 (105 x 148 мм)</option>
+              <option value="a5">A5 (210 x 148 мм)</option>
+              <option value="a4">A4 (210 x 297 мм)</option>
+              <option value="a3">A3 (420 x 297 мм)</option>
+            </select>
+        </form>
+
+    </div>
+    <div id="wideprint" class="content-div">
+        <form name="widetype">
+            <label for="widetype">Выберите материал печати</label>
+            <select  id="densityidw">
+              <option value="">-- Выберите материал печати --</option>
+              <option value="plainpaper">Обычная бумага</option>
+              <option value="baner">Баннер</option>
+              <option value="orafol">Оракал</option>
+              <option value="vinyl">Винил</option>
+              <option value="pvc">PVC</option>
+              <option value="pvcbold">ПВХ с печатью</option>
+            </select>
+        </form>
+        <div class="sizeswide">
+            <label for="width">Ширина материала (см)</label>
+            <input type="number" value="0" id="width1" name="width" min="0">
+            <label for="length">Длина материала (см)</label>
+            <input type="number" value="0" id="length1" name="length" min="0">
+        </div>
+    </div>
+    <div id="viscardprint" class="content-div">
+        <p>Выберите тип бумаги</p>
+        <div class="buttons">
+          <button class="bum" id="matev">Матовая</button>
+          <button class="bum" id="glossv">Глянцевая</button>
+          <button class="bum" id="designv">Дизайнерская</button>
+        </div>
+        <p>Выберите вид: одно- или двухсторонее</p>
+        <div class="buttons">
+             <button class="sideb" id="4+0v">Одностороняя</button>
+             <button class="sideb" id="4+4v">Двухстороняя</button>
+        </div>
+        <div class="lam">
+            <p>Выберите тип ламинации / фольгирования</p>
+        <div class="buttons"> 
+             <button class="lamb1" id="boxlamv">Пакетная</button>
+             <button class="lamb1" id="foilv">Фольгирование</button>
+             <button class="lamb1" id="nonelamv">Отстутсвует</button>
+        </div>
+        <div class="buttons"> 
+              <button class="lamb" id="matelamv">Матовая</button>
+              <button class="lamb" id="glosslamv">Глянцевая</button>
+        </div>
+    </div>
+    </div>
+    <div id="bookprint" class="content-div">
+        <form name="sizebook">
+            <label for="sizebook">Выберите формат книги</label>
+            <select  id="sizebookid">
+              <option value="">-- Выберите формат книги --</option>
+              <option value="a6">A6 (105 x 148 мм)</option>
+              <option value="a5">A5 (210 x 148 мм)</option>
+              <option value="a4">A4 (210 x 297 мм)</option>
+            </select>
+        </form>
+        <p> Выберите вариант переплета книги</p>
+        <div class="buttons"> 
+            <button class="cover1" id="hard">Твердый переплет</button>
+            <button class="cover1" id="soft">Мягкий переплет</button>
+       </div>
+       <p> Выберите цветность</p>
+        <div class="buttons"> 
+            <button class="color1" id="colorly">Цветная печать</button>
+            <button class="color1" id="black">Черно - белая печать</button>
+       </div>
+       <label for="pages">Количество страниц</label>
+       <input type="number" class="active" name="pages" id="pages" value="50" min="50" >
+    </div>
+    <div id="photobookprint" class="content-div">
+        <form name="sizefbook">
+            <label for="sizefbook">Выберите формат Фотобука</label>
+            <select  id="sizefbookid">
+              <option value="">-- Выберите формат книги --</option>
+              <option value="1515">15 см х 15 см</option>
+              <option value="a5">A5 (210 x 148 мм)</option>
+              <option value="2020">20 см х 20 см</option>
+              <option value="a4">A4 (210 x 297 мм)</option>
+            </select>
+        </form>
+        <p> Выберите вариант переплета Фотобука</p>
+        <div class="buttons"> 
+            <button class="coverf" id="hardf">Твердый переплет</button>
+            <button class="coverf" id="softf">Стандартный переплет</button>
+       </div>
+       <label for="pagesf">Количество разворотов</label>
+       <input type="number" class="active" name="pagesf" id="pagesf" value="1" min="1">
+    </div>
+    </div>
+
+    <div class="sum">
+        <label for="sums">Выберите тираж</label>
+        <input  class="summa" type="number" name="sums" id="sumid" step="10" value="0" min="0" max="1000">
+        <label for="suma">Итоговая стоимость</label>
+        <input class="summa" type="text" name="suma" id="sumaid" value="0" readonly>
+    </div>
+    <script src="script.js"></script>   
+</body>
+</html>

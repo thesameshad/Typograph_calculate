@@ -1,0 +1,73 @@
+button {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+      background-color: rgb(255, 255, 255);
+      border: solid;
+      border-color:rgb(190, 190, 190); 
+      cursor: pointer;
+      border-radius: 9px;
+      margin: 1rem;
+    }
+    .content-div {
+        display: none;
+        margin-top: 10px;
+    }
+    button.active {
+        border-color:#01883e
+      }
+
+   .inactive {
+      background-color: #bebebe;
+    }
+    
+    select.active {
+      border-color: #01883e;
+    }
+
+    select:focus {
+      outline: none;
+    }
+   input:focus {
+    outline:none;
+   }
+
+   .active {
+    border-color: #01883e;}
+
+    input {
+        font-family: Helvetica, Arial, sans-serif;
+        width: auto;
+        font-size: 1rem;
+        padding: 0.7rem 0.5rem;
+        width: 4rem;
+       
+          border: solid;
+          border-color:#bebebe;
+          cursor: pointer;
+          border-radius: 9px;
+          margin: 1rem;
+      }
+      
+      .summa.active {
+        border-color: #01883e;
+      }
+      .summa.off {
+        border-color:#bebebe;
+      }
+      
+      .summa:focus {
+        outline: none;
+      }
+
+      select {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 1rem;
+        padding: 0.7rem 1rem;
+          background-color: rgb(255, 255, 255);
+          border: solid;
+          border-color:#bebebe; 
+          cursor: pointer;
+          border-radius: 9px;
+          margin: 1rem;
+      }
